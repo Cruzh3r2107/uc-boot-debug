@@ -1,0 +1,20 @@
+# Sensitive data
+store.auth
+*.key
+*.asc
+*-key.json
+
+# Build outputs
+*.img
+*.img.xz
+work/
+*.snap
+unpack/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+*~

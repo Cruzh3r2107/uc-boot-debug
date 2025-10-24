@@ -1,0 +1,59 @@
+type: model
+authority-id: SgO2EXiK2bwgtciB1mNjMYM6zcljwXZt
+series: 16
+brand-id: SgO2EXiK2bwgtciB1mNjMYM6zcljwXZt
+model: iotdevice-model-vish
+architecture: amd64
+base: core24
+grade: dangerous
+snaps:
+  -
+    default-channel: latest/stable
+    id: 85A6EA5FzePqwtxruXMUC0VEtWiqPVe1
+    name: iotdevice-vishwanathsingh-tasks-pc
+    revision: 3
+    type: gadget
+  -
+    default-channel: 24/stable
+    id: pYVQrBcKmBa0mZ4CCN7ExT6jH8rY1hza
+    name: pc-kernel
+    type: kernel
+  -
+    default-channel: latest/stable
+    id: amcUKQILKXHHTlmSa7NMdnXSx02dNeeT
+    name: core22
+    type: base
+  -
+    default-channel: latest/stable
+    id: dwTAh7MZZ01zyriOZErqd1JynQLiOGvM
+    name: core24
+    type: base
+  -
+    default-channel: latest/stable
+    id: PMrrV4ml8uWuEUDBT8dSGnKUYbevVhc4
+    name: snapd
+    type: snapd
+  -
+    default-channel: latest/stable
+    id: ASctKBEHzVt3f1pbZLoekCvcigRjtuqw
+    name: console-conf
+    type: app
+  -
+    default-channel: latest/stable
+    id: ffnH0sJpX3NFAclH777M8BdXIWpo93af
+    name: landscape-client
+    type: app
+store: tahyee7nejoRie1Xohyo
+timestamp: 2025-10-14T16:14:12+00:00
+sign-key-sha3-384: XdJuYavE_6clGzpNOgfTg7CweDkKUoGuqKYQ1c9p40pippU32qmq2nrbQmhw7Wft
+
+AcLBcwQAAQoAHRYhBLM/R4u3R4z40r6TA/cMo9f3akHFBQJo+XvPAAoJEPcMo9f3akHFLOYP/1s7
+StESDswY9Kj82jQfCF/zXyo9CyyI9TBtMFwQKub+lTVPEctqe9UVuC3hMrP8SBVIMCiWW4VLm/8+
+oNyznJTDPGokCvNYOloXikmsoxB72t8ZRvWqjZn90lFW6anYvw4m6SI/jW++/kO2Pw0QX7rrFRoo
+WuPsGZ1/U5KKx1PK/GotUFkl4ATFk1ZMc+c/M+c+6Xulvpz9lftiBLO/Y8XB1yMIoPNK6hwcYFKN
+FCTaaZio1R9bI8C3aBELDMFAJ3ARPjAGFgml2J0TjSMmilsA9kaLFB31g/u9cVwdFNcz4WmcOquS
+1zKnIuaVIhUq/+5dHYqfUZN8DdAE4rWlCxQxdxaT/oWlqohPAFGdYoGwPn/RQY6IbxHx72qFjBlk
+wZwABm3oPL/ncyjZI7f++jv99tV03/1FlYr/GmTyCu/qZDg59B8uhh6QkUPk8XZgdVOAjHH/LmKq
+fER+a2/HJ1QMFyXYITQu1VlFVnllUROd/nL4vfJsb6aO6Hm35Tu9uvQLId4EYKMHImnhkBC+esDm
+Jj/c9Q4qZAwj0PxRN23xnZ6aRBEjVrsLie6eEz8/xv3+tF1Adu5VmdLWB6lKBjJ1C9vveDkvEq+X
+/CWOjk9Ly1qA9pd2/ysqiNBrjQtlc5ByI50f6OUdfuANvJaU2QVTeSSduud8TmHrzdgMgEMN

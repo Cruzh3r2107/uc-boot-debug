@@ -1,0 +1,57 @@
+{
+  "type": "model",
+  "authority-id": "SgO2EXiK2bwgtciB1mNjMYM6zcljwXZt",
+  "brand-id": "SgO2EXiK2bwgtciB1mNjMYM6zcljwXZt",
+  "series": "16",
+  "model": "iotdevice-model-vish",
+  "store": "tahyee7nejoRie1Xohyo",
+  "architecture": "amd64",
+  "base": "core24",
+  "grade": "dangerous",
+  "snaps": [
+    {
+      "default-channel": "latest/stable",
+      "id": "85A6EA5FzePqwtxruXMUC0VEtWiqPVe1",
+      "name": "iotdevice-vishwanathsingh-tasks-pc",
+      "type": "gadget",
+      "revision": "3"
+    },
+    {
+      "default-channel": "24/stable",
+      "id": "pYVQrBcKmBa0mZ4CCN7ExT6jH8rY1hza",
+      "name": "pc-kernel",
+      "type": "kernel"
+    },
+    {
+      "default-channel": "latest/stable",
+      "id": "amcUKQILKXHHTlmSa7NMdnXSx02dNeeT",
+      "name": "core22",
+      "type": "base"
+    },
+    {
+      "default-channel": "latest/stable",
+      "id": "dwTAh7MZZ01zyriOZErqd1JynQLiOGvM",
+      "name": "core24",
+      "type": "base"
+    },
+    {
+      "default-channel": "latest/stable",
+      "id": "PMrrV4ml8uWuEUDBT8dSGnKUYbevVhc4",
+      "name": "snapd",
+      "type": "snapd"
+    },
+    {
+      "default-channel": "latest/stable",
+      "id": "ASctKBEHzVt3f1pbZLoekCvcigRjtuqw",
+      "name": "console-conf",
+      "type": "app"
+    },
+    {
+      "name": "landscape-client",
+      "type": "app",
+      "default-channel": "latest/stable",
+      "id": "ffnH0sJpX3NFAclH777M8BdXIWpo93af"
+    }
+  ],
+  "timestamp": "2025-10-14T16:14:12+00:00"
+}
