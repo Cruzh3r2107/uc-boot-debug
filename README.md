@@ -12,13 +12,15 @@ System never completes first boot and hangs at this error.
 
 ## Files
 
+### `/snap/`
+Complete gadget snap source directory:
+- `snapcraft.yaml` - Gadget snap build configuration
+- `gadget.yaml` - Partition layout and sizes  
+- `hooks/` - Any prepare-device or configure hooks
+- Other gadget snap source files
+
 ### `/model/`
 - **iotdevice-model-vish.assert** - Signed model assertion (7 snaps)
-
-### `/gadget-snap/`
-- **snapcraft.yaml** - Gadget snap build configuration
-- **gadget.yaml** - Partition layout and sizes
-- **meta/** - Hooks and metadata (if present)
 
 ### `/docs/`
 - **qemu-command.sh** - QEMU boot command
@@ -46,9 +48,9 @@ System never completes first boot and hangs at this error.
 ## Questions for Review
 
 1. **Is snapd rev 25202 the buggy 3.72 version?** Which revision should I pin?
-2. **Are partition sizes correct?** Especially `ubuntu-seed` for 7-11 snaps
+2. **Are partition sizes correct?** Check `snap/gadget.yaml` ubuntu-seed size for 7-11 snaps
 3. **Does image need truncation?** If so, what size?
-4. **Any gadget.yaml issues?** Check partition definitions
+4. **Any issues with hooks?** Check `snap/hooks/` if present
 
 ## What We've Tried
 
@@ -61,7 +63,11 @@ System never completes first boot and hangs at this error.
 
 ## Build Process
 ```bash
-# Build image
+# Build gadget snap
+cd snap/
+snapcraft
+
+# Build Ubuntu Core image
 UBUNTU_STORE_AUTH=$(cat store.auth) ubuntu-image snap \
   iotdevice-model-vish.assert \
   --output pc.img
@@ -75,10 +81,10 @@ qemu-system-x86_64 -enable-kvm -smp 2 -m 4096 \
 ## Help Needed
 
 Please review:
-- Gadget partition sizes (ubuntu-seed capacity)
-- Model snap selection and versions
+- **snap/gadget.yaml** - Partition sizes (especially ubuntu-seed)
+- **snap/hooks/** - Any hook issues
+- **model/** - Snap selection and versions
 - Recommended snapd revision to pin
-- Any configuration issues
 
 ---
 

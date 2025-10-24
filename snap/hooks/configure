@@ -1,0 +1,22 @@
+#!/bin/sh
+set -e
+
+# Enable and start ubuntu-frame
+if snapctl services ubuntu-frame >/dev/null 2>&1; then
+    snapctl start --enable ubuntu-frame.daemon
+    snapctl start --enable ubuntu-frame.launcher
+    
+    # Configure ubuntu-frame wallpaper
+    snapctl set ubuntu-frame config="
+wallpaper-top=0x92006a
+wallpaper-bottom=0xdd4814
+"
+fi
+
+# Configure Chromium in kiosk mode
+if snapctl services chromium >/dev/null 2>&1; then
+    # Set Chromium to run in kiosk mode with URL
+    snapctl set chromium url="https://ubuntu.com"
+    snapctl set chromium kiosk="true"
+    snapctl start --enable chromium
+fi
